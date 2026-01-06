@@ -38,11 +38,7 @@ Mục tiêu của mình là làm chủ quy trình xây dựng giao diện hiện
 - **Bài 7 - Xử lý sự kiện & Form:** Sử dụng `v-on` (@click, @submit...), Event Modifiers và liên kết dữ liệu Form (`v-model`).
 - **Bài 8 - Vue Router & Authentication:** Điều hướng trang, quản lý trạng thái đăng nhập, bảo mật tuyến đường (Navigation Guards).
 
-### 🛠 Công nghệ & Công cụ sử dụng
-- **Frontend Framework:** ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=flat&logo=vuedotjs&logoColor=%234FC08D)
-- **UI Framework:** ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511f2.svg?style=flat&logo=bootstrap&logoColor=white)
-- **Build Tool:** ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white)
-- **Language:** ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white)
+
 
 ---
 
@@ -51,11 +47,6 @@ Mục tiêu của mình là làm chủ quy trình xây dựng giao diện hiện
 - [ ] Tích hợp đầy đủ các chức năng CRUD (Thêm, Sửa, Xóa, Xem) với VueJS.
 - [ ] Xử lý xác thực người dùng (Login/Logout) và phân quyền truy cập.
 
-### 🛠 Tech Stack sử dụng trong môn học
-![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
 ---
 
@@ -66,9 +57,8 @@ Mục tiêu của mình là làm chủ quy trình xây dựng giao diện hiện
 ---
 
 ## 📫 Kết nối với mình
-- 📧 Email: [Địa chỉ email của bạn]
-- 💼 LinkedIn: [Link của bạn]
-- 🐙 GitHub: [Link của bạn]
+- 📧 Email: khanhnguyeen2208@gmail.com
+- 🐙 GitHub: github.com/vhak22
 
 ---
 "The best way to predict the future is to create it." - *Học, học nữa, học mãi!*
