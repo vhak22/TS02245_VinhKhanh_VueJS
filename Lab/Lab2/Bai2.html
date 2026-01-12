@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"
+        integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Bai2 Lab2</title>
+</head>
+
+<body>
+    <H1>17 Nguyen Dai Vinh Khanh</H1>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 p-4">
+                <h3 class="text-info fw-bold mb-3">Lab2 bai1</h3>
+                <div class="card p-4 text-center shadow-sm">
+                    <h5 class="card-title text-danger fw-bold mb-4">Bảng Thành Phần Dinh Dưỡng</h5>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle border-secondary-subtle">
+                            <thead>
+                                <tr class="table-warning">
+                                    <th rowspan="2" class="py-3" style="width: 40%;">Thành Phần</th>
+                                    <th colspan="2" class="py-2">Giá Trị</th>
+                                </tr>
+                                <tr class="table-warning">
+                                    <th style="width: 30%;">Khối Lượng</th>
+                                    <th style="width: 30%;">% DV*</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Calories</td>
+                                    <td>200 kcal</td>
+                                    <td>20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Chất Béo</td>
+                                    <td>9 g</td>
+                                    <td>14%</td>
+                                </tr>
+                                <tr>
+                                    <td>Chất Béo Bão Hòa</td>
+                                    <td>4 g</td>
+                                    <td>20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Chất Đạm</td>
+                                    <td>8 g</td>
+                                    <td>16%</td>
+                                </tr>
+                                <tr>
+                                    <td>Chất Xơ</td>
+                                    <td>5 g</td>
+                                    <td>20%</td>
+                                </tr>
+                                <tr>
+                                    <td>Đường</td>
+                                    <td>12 g</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">Vitamin</td>
+                                    <td>Vitamin C</td>
+                                    <td>25%</td>
+                                </tr>
+                                <tr>
+                                    <td>Vitamin D</td>
+                                    <td>10%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row g-4">
+            <div class="col-md-7">
+                <div class="card p-4 shadow-sm">
+                    <h4 class="fw-bold mb-4">Form Đăng Ký Thông Tin</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label small">Họ và Tên</label>
+                            <input type="text" class="form-control" placeholder="Nhập họ và tên">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small">Email</label>
+                            <input type="email" class="form-control" placeholder="Nhập email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small">Số Điện Thoại</label>
+                            <input type="tel" class="form-control" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label small">Mật Khẩu</label>
+                                <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label small">Xác Nhận Mật Khẩu</label>
+                                <input type="password" class="form-control" placeholder="Xác nhận mật khẩu">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small me-3">Giới Tính:</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="nam" checked>
+                                <label class="form-check-label" for="nam">Nam</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="nu">
+                                <label class="form-check-label" for="nu">Nữ</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small">Ngôn Ngữ</label>
+                            <select class="form-select">
+                                <option>Tiếng Việt</option>
+                                <option>English</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="check">
+                            <label class="form-check-label small" for="check">Tôi đồng ý với các điều khoản và điều
+                                kiện</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary px-4">Đăng Ký</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card p-4 shadow-sm">
+                    <h4 class="fw-bold mb-4">Form Đăng nhập</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label small">Email</label>
+                            <input type="email" class="form-control" placeholder="Nhập email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small">Mật Khẩu</label>
+                            <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-auto px-4">Đăng Nhập</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
