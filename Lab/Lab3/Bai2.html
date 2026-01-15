@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"
+        integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Bai2-Lab3</title>
+    <style>
+        @media (min-width: 992px) {
+            .nav-item.dropdown:hover .dropdown-menu {
+                display: block;
+                margin-top: 0;
+            }
+        }
+
+        /* Màu nền tùy chỉnh */
+        .navbar {
+            background-color: #ffffff !important;
+            /* Màu xanh đen sang trọng */
+        }
+
+        /**/
+        /* Đổi màu khi di chuột qua link */
+        .nav-link:hover {
+            color: #ff9500 !important;
+            /* Màu vàng */
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>17 Nguyen Dai Vinh Khanh</h1>
+    <h2>Bai2 Lab3</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="Bai1.html">
+                <img src="./images/logo-energy-pilates.png" alt="Logo" style="width: 150px;">
+            </a>
+
+            <!-- <button class="navbar" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" >
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <nav class="navbar navbar-light bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="collapse navbar-collapse " id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#"><i class="fa-solid fa-list me-1"></i> Bài viết</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#"><i class="fa-solid fa-film me-1"></i> Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#"><i class="fa-solid fa-circle-info me-1"></i>
+                            Giới
+                            thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#"><i class="fa-solid fa-calendar-days me-1"></i> Sự
+                            kiện</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user me-1"></i> Tài khoản
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Tiếng Việt</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link d-none d-lg-block">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Tiếng Anh</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 p-2">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/banner2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/banner3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="text-muted mb-3 text-info fw-bold">About us</h3>
+                <div class="card p-4 text-center mb-4 shadow-sm">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img src="images/avatar.png" alt="Avatar"
+                            class="profile-img border border-4 border-white w-100">
+                    </div>
+                    <h5 class="card-title text-muted fw-bold">Giới thiệu doanh nghiệp</h5>
+                    <p class="card-subtitle text-muted text-start">Quảng Cáo Vĩnh Khánh<br>
+                        xin chào chao xìn
+                </div>
+                <div class="container">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#Bai1"
+                                type="button" role="tab">Bài 1</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#Bai2"
+                                type="button" role="tab">Bài 2</button>
+                        </li>
+
+
+                    </ul>
+                    <div class="tab-content">
+                        <div id="Bai1" class="container tab-pane fade show active"><br>
+                            <div class="container">
+                                <div class="d-flex mb-3">
+                                    <img src="images/corevalue.jpg" class="rounded me-2"
+                                        style="width: 80px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="small mb-1 fw-bold">Biết ơn đời, đời sẽ thương ta</h6>
+                                        <small class="text-muted"><i class="bi bi-chat-dots"></i> 30</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="images/orange_300x300.jpg" class="rounded me-2"
+                                        style="width: 80px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="small mb-1 fw-bold">9 tác dụng tuyệt vời của quả cam</h6>
+                                        <small class="text-muted"><i class="bi bi-chat-dots"></i> 28</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Bai2" class="container tab-pane fade"><br>
+                            <div class="d-flex mb-3">
+                                <img src="images/sesameoil_300x300.jpg" class="rounded me-2"
+                                    style="width: 80px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="small mb-1 fw-bold">10 công dụng bất ngờ từ dầu dừa</h6>
+                                    <small class="text-muted"><i class="bi bi-chat-dots"></i> 15</small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <img src="images/spinach_300x300.jpg" class="rounded me-2"
+                                    style="width: 80px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="small mb-1 fw-bold">Lợi ích khi ăn rau mỗi ngày</h6>
+                                    <small class="text-muted"><i class="bi bi-chat-dots"></i> 12</small>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h4 class="text-custom-blue mb-3 text-info fw-bold">My Blog</h4>
+                <div class="container">
+                    <div class="card p-4 shadow-sm">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="card border-0">
+                                    <h6 class="fw-bold">Phương pháp tập Pilates giúp phục hồi chấn thương cột sống
+                                        <i class="bi bi-chat-dots"></i> 16
+                                    </h6>
+                                    <img src="images/tap-piltes.jpg" class="img-fluid rounded mb-2" alt="Pilates">
+                                    <p class="small text-muted">Ngoài việc giúp duy trì vóc dáng, cải thiện sự linh
+                                        hoạt,
+                                        dẻo
+                                        dai cho người tập, Pilates giúp cơ bắp và các khớp mọc dài hơn, kéo giãn
+                                        hơn...</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="d-flex mb-3">
+                                    <img src="images/corevalue.jpg" class="rounded me-2"
+                                        style="width: 80px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="small mb-1 fw-bold">Biết ơn đời, đời sẽ thương ta</h6>
+                                        <small class="text-muted"><i class="bi bi-chat-dots"></i> 30</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="images/orange_300x300.jpg" class="rounded me-2"
+                                        style="width: 80px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="small mb-1 fw-bold">9 tác dụng tuyệt vời của quả cam</h6>
+                                        <small class="text-muted"><i class="bi bi-chat-dots"></i> 28</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="images/sesameoil_300x300.jpg" class="rounded me-2"
+                                        style="width: 80px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="small mb-1 fw-bold">10 công dụng bất ngờ từ dầu dừa</h6>
+                                        <small class="text-muted"><i class="bi bi-chat-dots"></i> 15</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <img src="images/spinach_300x300.jpg" class="rounded me-2"
+                                        style="width: 80px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="small mb-1 fw-bold">Lợi ích khi ăn rau mỗi ngày</h6>
+                                        <small class="text-muted"><i class="bi bi-chat-dots"></i> 12</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-more px-4">Xem thêm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-5">
+                    <div class="card p-4 shadow-sm">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <img src="images/video1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Đi xa hơn</h5>
+                                        <p class="card-text">Nội dung mô tả ngắn gọn.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <img src="images/video2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Đi xa hơn</h5>
+                                        <p class="card-text">Nội dung mô tả ngắn gọn.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <img src="images/video3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Abc</h5>
+                                        <p class="card-text">Nội dung mô tả ngắn gọn.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <img src="images/video4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hello quí zị</h5>
+                                        <p class="card-text">Pháp sư trần dần</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-more px-4">Xem thêm</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+</body>
+
+</html>
