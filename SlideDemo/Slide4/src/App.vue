@@ -1,11 +1,11 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import Test from './components/Test.vue'
+import Test from './components/Test.vue';
 import Trang34 from './components/Trang34.vue';
 </script>
 
 <template>
-  <Trang34/>
+  <Test/>
   <!-- <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />

@@ -1,27 +1,26 @@
-<script>
-export default {
-  data() {
-    return {
-      count: 0
-    }
-  }, // <--- Nhớ dấu phẩy ở đây để ngăn cách data và methods
-  methods: {
-    reset() {
-      this.count = 0
-    },
-    increment() {
-      this.count++
-    }
-  }
-}
-</script>
 <template>
- 
-    <h1>Hello Cả Nhà Nhế</h1>
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <button type="button" @click="reset">Reset</button>
+  <div class="grid" style="--cols: 3">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<div class="grid" style="--cols: 5">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>6</div>
+</div>
+
 </template>
-
-<style scoped>
-
+<style>
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  gap: 16px;
+}
 </style>
+<script setup>
+ 
+</script>
