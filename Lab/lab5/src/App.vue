@@ -1,18 +1,31 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="container mt-4">
+    <h1 class="text-center">Lab 5 - Vĩnh Khánh</h1>
+    <hr/>
+    <Bai1 />
+    <hr/>
+    <Bai2 />
+    <hr/>
+    <Bai3 />
+    <hr/>
+    <div class="row">
+        <CreatePost @add-post="addPost" />
+        <PostList :posts="posts" />
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
+
+<script setup>
+import { ref } from 'vue';
+import Bai1 from './components/Bai1.vue';
+import Bai2 from './components/Bai2.vue';
+import Bai3 from './components/Bai3.vue';
+import CreatePost from './components/CreatePost.vue';
+import PostList from './components/PostList.vue';
+
+const posts = ref([]);
+const addPost = (post) => { posts.value.push(post); };
+</script>
 
 <style scoped>
 .logo {
