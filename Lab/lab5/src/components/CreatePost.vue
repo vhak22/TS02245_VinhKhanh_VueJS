@@ -23,8 +23,8 @@ function submitPost() {
       author: author.value,
       content: content.value
     };
-    emit('add-post', newPost); // Gửi sự kiện [cite: 3377]
-    title.value = ''; author.value = ''; content.value = ''; // Reset form [cite: 3379]
+    emit('add-post', newPost);
+    title.value = ''; author.value = ''; content.value = '';
   }
 }
 </script>
