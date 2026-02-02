@@ -1,8 +1,13 @@
 <script setup>
-import HelloWorld from './components/Bai1.vue'
+import HelloWorld from './components/Bai4.vue'
+import Bai1 from './components/Bai1.vue';
+import Bai2 from './components/Bai2.vue';
+import Bai3 from './components/Bai3.vue';
+
 </script>
 
 <template>
+  <!-- <Bai1/> -->
   <HelloWorld />
 </template>
 

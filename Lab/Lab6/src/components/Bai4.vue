@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="container mt-4">
         <div class="row">
             <div class="col-sm-4">
@@ -55,18 +55,18 @@
 <script setup>
 import { ref } from 'vue';
 
-// Dữ liệu mẫu ban đầu [cite: 181-184]
+//vinhkhanh: dữ liệu đầu vào
 const students = ref([
-    { name: 'Nguyễn Chí Hùng', score: 8, dob: '2006-01-01' },
-    { name: 'Phạm Thị Lan', score: 9, dob: '2006-05-15' }
+    { name: 'Trần Quang Bình', score: 10, dob: '1999-1-10' },
+    { name: 'Nguyễn Đài Vĩnh Khánh', score: 9, dob: '2006-05-15' },
 ]);
 
-// Biến quản lý form
+//vinhkhanh: khai báo biến qly form
 const student = ref({ name: '', score: null, dob: '' });
 let isEditing = ref(false);
 let editingIndex = ref(null);
 
-// Xử lý Thêm hoặc Cập nhật [cite: 197-209]
+// Xử lý Thêm hoặc Cập nhật
 function submitForm() {
     if (isEditing.value) {
         // Cập nhật
@@ -87,7 +87,7 @@ function editStudent(index) {
     editingIndex.value = index;
 }
 
-// Chức năng Xóa [cite: 216-218]
+// Chức năng Xóa
 function deleteStudent(index) {
     if (confirm("Bạn có chắc muốn xóa học sinh này không?")) {
         students.value.splice(index, 1);
@@ -99,5 +99,53 @@ function resetForm() {
     student.value = { name: '', score: null, dob: '' };
     isEditing.value = false;
     editingIndex.value = null;
+}
+</script> -->
+<template>
+    <div class="container p-4" style="max-width: 400px; border: 1px solid #ddd; border-radius: 8px;">
+        <h3 class="text-center text-danger mb-4">17 Nguyễn Đài Vĩnh Khánh</h3>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Số lượng:</label>
+            <input type="number" v-model="quantity" class="form-control" placeholder="Nhập số lượng...">
+            <label class="form-label fw-bold">
+                <p v-if="quantity >= 10">Được giảm giá 10%</p>
+                <p v-else>Không được giảm giá</p>
+            </label>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">Đơn giá:</label>
+            <input type="number" v-model="price" class="form-control" placeholder="Nhập giá tiền...">
+        </div>
+        <hr>
+
+        <div class="alert alert-primary text-center">
+            <h5>Thành tiền:</h5>
+            <h2 class="fw-bold">{{ getFinalTotal() }}</h2>
+        </div>
+
+
+    </div>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+
+const quantity = ref(0);
+const price = ref(0);
+
+
+function getFinalTotal() {
+    let total = quantity.value * price.value;
+
+    if (quantity.value >= 10) {
+        total = total * 0.9;
+    }
+
+    return new Intl.NumberFormat('vi-VN', {
+        style: 'currency',
+        currency: 'VND'
+    }).format(total);
 }
 </script>
