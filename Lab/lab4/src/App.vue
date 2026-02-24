@@ -1,11 +1,11 @@
 <script setup>
-import Bai3 from './components/Bai3.vue';
-import Bai4 from './components/Bai4.vue';
+// import Bai3 from './components/Bai3.vue';
+// import Bai4 from './components/Bai4.vue';
 import Test from './components/Test.vue';
 </script>
 
 <template>
-  <Bai4 />
+  <Test />
 </template>
 
 <style scoped>

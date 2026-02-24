@@ -13,21 +13,4 @@
   </main>
 </template>
 
-<style>
-nav {
-  padding: 30px;
-  background-color: #f0f0f0;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-  /* Vue green */
-}
-</style>
+<style></style>

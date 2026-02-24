@@ -1,30 +1,33 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <nav>
+    <router-link to="{ name: 'Home' }">Home</router-link> |
+    <router-link to="{ name: 'BlogList' }">Blog</router-link> |
+    <router-link to="{ name: 'UserProfile' }">Profile</router-link> |
+    <router-link to="/me">My Alias (Me)</router-link> |
+    <router-link to="{ name: 'Dashboard' }">Dashboard (Protected)</router-link> |
+    <router-link to="{ name: 'Login' }">Login</router-link>
+  </nav>
+
+  <main>
+    <router-view />
+  </main>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+nav {
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+nav a.router-link-active {
+  color: #42b983;
 }
 </style>
