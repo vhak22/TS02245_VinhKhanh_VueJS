@@ -1,0 +1,26 @@
+[
+    {
+        "id": "C01",
+        "name": "Vue.js 3 Basic",
+        "author": "Mr. Tuấn",
+        "fee": 500,
+        "level": "Cơ bản",
+        "time": "10 giờ"
+    },
+    {
+        "id": "C02",
+        "name": "React Master",
+        "author": "Ms. Hoa",
+        "fee": 800,
+        "level": "Nâng cao",
+        "time": "20 giờ"
+    },
+    {
+        "id": "C03",
+        "name": "Node.js Backend",
+        "author": "Mr. Linh",
+        "fee": 600,
+        "level": "Nâng cao",
+        "time": "15 giờ"
+    }
+]
